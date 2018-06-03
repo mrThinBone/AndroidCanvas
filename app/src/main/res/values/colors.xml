@@ -17,4 +17,8 @@
     <color name="horizon_sky_to">#FFFFC125</color>
     <color name="horizon_ground_from">#FF5F9EA0</color>
     <color name="horizon_ground_to">#FF00008B</color>
+
+    <color name="start">#D11F25</color>
+    <color name="center">#EA424C</color>
+    <color name="end">#FFCD32</color>
 </resources>

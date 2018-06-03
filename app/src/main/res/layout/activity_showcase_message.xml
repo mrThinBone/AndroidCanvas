@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <my.vinhtv.androidcanvas.MessageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Test Text"
+        android:textColor="@color/inner_border"
+        android:layout_gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="13dp"/>
+
+</FrameLayout>
