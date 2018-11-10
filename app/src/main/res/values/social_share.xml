@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="facebook">#3b5998</color>
+    <color name="twitter">#55acee</color>
+    <color name="google_plus">#CC3333</color>
+    <color name="google_plus_lt">#DD4B39</color>
+    <color name="floating_button">#808080</color>
+</resources>

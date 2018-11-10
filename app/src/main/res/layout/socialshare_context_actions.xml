@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/social_share_fb"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/socialshare_left_shape"
+        android:text="f"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+    <ImageButton
+        android:id="@+id/social_share_twitter"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:src="@drawable/socialshare_ic_twitter"
+        android:background="@color/twitter"/>
+    <ImageButton
+        android:id="@+id/social_share_google_plus"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/socialshare_ic_google_plus"
+        android:background="@drawable/socialshare_right_shape"/>
+</merge>

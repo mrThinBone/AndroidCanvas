@@ -20,6 +20,6 @@ class AvatarShowCaseActivity: AppCompatActivity() {
             Glide.with(this)
                     .load("https://yt3.ggpht.com/a-/AJLlDp2RCJBaec1oEPJE5GFL3JbqObwkVGw96tmS7g=s900-mo-c-c0xffffffff-rj-k-no")
                     .into(myView)
-        }, 5000)
+        }, 2000)
     }
 }
