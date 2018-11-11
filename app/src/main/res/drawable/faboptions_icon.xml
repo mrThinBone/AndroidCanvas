@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/expanded"
+        android:drawable="@drawable/faboptions_ic_close"
+        android:state_checked="true"/>
+
+    <item android:id="@+id/collapsed"
+        android:drawable="@drawable/faboptions_ic_overflow" />
+
+
+    <transition
+        android:drawable="@drawable/faboptions_ic_menu_animatable"
+        android:fromId="@id/collapsed"
+        android:toId="@id/expanded" />
+
+    <transition
+        android:drawable="@drawable/faboptions_ic_close_animatable"
+        android:fromId="@id/expanded"
+        android:toId="@id/collapsed"/>
+</animated-selector>

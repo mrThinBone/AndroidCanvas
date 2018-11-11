@@ -5,11 +5,9 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
-import my.vinhtv.androidcanvas.samples.AvatarShowCaseActivity
-import my.vinhtv.androidcanvas.samples.CounterFabActivity
-import my.vinhtv.androidcanvas.samples.MessageShowCaseActivity
-import my.vinhtv.androidcanvas.samples.SocialShareActivity
+import my.vinhtv.androidcanvas.samples.*
 
+// TODO: elastic download, searchview, threedots, obliedge background, credit card
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         button2.setOnClickListener(this)
         button3.setOnClickListener(this)
         button4.setOnClickListener(this)
+        button5.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -27,6 +26,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button2 -> open(CounterFabActivity::class.java)
             R.id.button3 -> open(MessageShowCaseActivity::class.java)
             R.id.button4 -> open(SocialShareActivity::class.java)
+            R.id.button5 -> open(FabOptionsActivity::class.java)
         }
     }
 
