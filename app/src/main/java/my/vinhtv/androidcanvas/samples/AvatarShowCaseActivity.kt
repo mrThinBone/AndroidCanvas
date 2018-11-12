@@ -16,10 +16,10 @@ class AvatarShowCaseActivity: AppCompatActivity() {
         setContentView(R.layout.activity_showcase_avatar)
         val myView = findViewById<AvatarView>(R.id.my_view)
 //        myView.setOnClickListener({})
-        handler.postDelayed({
+        /*handler.postDelayed({
             Glide.with(this)
                     .load("https://yt3.ggpht.com/a-/AJLlDp2RCJBaec1oEPJE5GFL3JbqObwkVGw96tmS7g=s900-mo-c-c0xffffffff-rj-k-no")
                     .into(myView)
-        }, 2000)
+        }, 2000)*/
     }
 }
