@@ -24,6 +24,7 @@
         <activity android:name=".samples.SocialShareActivity"/>
         <activity android:name=".samples.FabOptionsActivity"/>
         <activity android:name=".samples.ThreeDotsActivity"/>
+        <activity android:name=".samples.AnimateCircleActivity"/>
     </application>
 
 </manifest>

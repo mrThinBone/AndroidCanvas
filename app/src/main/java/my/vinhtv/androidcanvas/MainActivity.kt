@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         button4.setOnClickListener(this)
         button5.setOnClickListener(this)
         button6.setOnClickListener(this)
+        button7.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button4 -> open(SocialShareActivity::class.java)
             R.id.button5 -> open(FabOptionsActivity::class.java)
             R.id.button6 -> open(ThreeDotsActivity::class.java)
+            R.id.button7 -> open(AnimateCircleActivity::class.java)
         }
     }
 
