@@ -7,7 +7,6 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import my.vinhtv.androidcanvas.samples.*
 
-// TODO: elastic download, searchview, threedots, obliedge background, credit card
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +19,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         button5.setOnClickListener(this)
         button6.setOnClickListener(this)
         button7.setOnClickListener(this)
+        button8.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button5 -> open(FabOptionsActivity::class.java)
             R.id.button6 -> open(ThreeDotsActivity::class.java)
             R.id.button7 -> open(AnimateCircleActivity::class.java)
+            R.id.button8 -> open(BackgroundActivity::class.java)
         }
     }
 

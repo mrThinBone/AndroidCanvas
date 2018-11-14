@@ -6,10 +6,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <com.example.user.myapplication.BackgroundView
+        <my.vinhtv.androidcanvas.BackgroundView
             android:layout_width="match_parent"
             android:layout_height="300dp">
-        </com.example.user.myapplication.BackgroundView>
+        </my.vinhtv.androidcanvas.BackgroundView>
         <View
             android:layout_width="match_parent"
             android:layout_height="1000dp"/>

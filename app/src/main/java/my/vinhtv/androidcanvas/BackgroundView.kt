@@ -50,9 +50,17 @@ class BackgroundView: FrameLayout, ViewTreeObserver.OnScrollChangedListener {
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
         mY = (h*angle/100).roundToInt()
+        /** solid color background */
+//        paint.color =
+
+        /** image background */
+        val bmp = BitmapFactory.decodeResource(resources, R.drawable.bg)
+        paint.shader = BitmapShader(bmp, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP)
+
+        /** gradient background */
         //https://stackoverflow.com/questions/25934678/how-to-rotate-the-lineargradient-in-a-given-shape
-        paint.shader = LinearGradient(0f,0f,0f, h.toFloat(),
-            COLORS, floatArrayOf(0.01f, 0.99f), Shader.TileMode.MIRROR)
+//        paint.shader = LinearGradient(0f,0f,0f, h.toFloat(),
+//            COLORS, floatArrayOf(0.01f, 0.99f), Shader.TileMode.MIRROR)
         calculatePath(mY)
     }
 
@@ -84,9 +92,9 @@ class BackgroundView: FrameLayout, ViewTreeObserver.OnScrollChangedListener {
         val w = width.toFloat()
         val h = height.toFloat()
         path.reset()
-        path.moveTo(0f,h-diff)
+        path.moveTo(0f, h - diff)
         path.lineTo(w, h)
-        path.lineTo(w,0f)
+        path.lineTo(w, 0f)
         path.lineTo(0f, 0f)
         path.close()
     }
